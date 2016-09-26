@@ -3,6 +3,7 @@ package org.andreystarikov;
 /**
  * Created by Andrey on 23.09.2016.
  */
+
 public class Equation {
 
     private char[] x, y, z;
@@ -27,12 +28,10 @@ public class Equation {
                         for (int e = min[4]; e < 10; e++) {
                             int[] abcde = {a, b, c, d, e};
                             if (isSolution(abcde)) {
-                                ////////
-                                for (int i = 0; i < abcde.length; i++) {
-                                    System.out.print(abcde[i]);
-                                }
-                                System.out.println();
-                                /////
+//                                for (int i = 0; i < abcde.length; i++) {
+//                                    System.out.print(abcde[i]);
+//                                }
+//                                System.out.println();
                                 count++;
                             }
                         }

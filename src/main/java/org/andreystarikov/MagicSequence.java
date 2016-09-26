@@ -15,7 +15,8 @@ public class MagicSequence {
 
 
     public MagicSequence(int min, int max, int magicSum) {
-        //TODO влепить проверку на min < max
+        if (min > max) throw new IllegalArgumentException();
+
         this.max = max;
         this.min = min;
         this.magicSum = magicSum;
@@ -29,7 +30,6 @@ public class MagicSequence {
         int nextNumber = min;
         while (nextNumber <= max) {
             if (isMagic(array)) {
-//                System.out.println(nextNumber);
                 count++;
             }
             increment();
@@ -82,13 +82,12 @@ public class MagicSequence {
         return positionOfMagic == arrayLength - 1;
     }
 
-    private boolean arrayInit() {
+    private void arrayInit() {
         array = new int[arrayLength];
         int a = min;
         for (int i = arrayLength - 1; i >= 0; i--) {
             array[i] = a % 10;
             a /= 10;
         }
-        return true;
     }
 }

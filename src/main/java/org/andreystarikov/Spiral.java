@@ -5,7 +5,7 @@ package org.andreystarikov;
  */
 public class Spiral {
 
-    public int sumOfDiagonals(int side) {
+    public static int sumOfDiagonals(int side) {
         int sum = 0;
         if (side > 0) {
             int number = 1;

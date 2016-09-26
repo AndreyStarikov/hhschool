@@ -16,10 +16,10 @@ public class InsertionSort {
             arr[prevKey+1] = currElem;
         }
     }
-
-    public static void main(String[] args) {
-        int[] a = {2, 9, 3, 5, 7};
-        insertionSort(a);
-        for (int b:a) System.out.println(b);
-    }
+//
+//    public static void main(String[] args) {
+//        int[] a = {2, 9, 3, 5, 7};
+//        insertionSort(a);
+//        for (int b:a) System.out.println(b);
+//    }
 }

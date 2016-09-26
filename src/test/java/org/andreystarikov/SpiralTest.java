@@ -11,13 +11,11 @@ public class SpiralTest {
 
     @Test
     public void sumOfDiagonals() throws Exception {
-        Spiral spiral = new Spiral();
-        System.out.println(spiral.sumOfDiagonals(5));
+        assertEquals("Получаем", 101, Spiral.sumOfDiagonals(5));
     }
 
     @Test
     public void sumOfDiagonals2() throws Exception {
-        Spiral spiral = new Spiral();
-        System.out.println(spiral.sumOfDiagonals(1013));
+        assertEquals("Получаем", 693520565, Spiral.sumOfDiagonals(1013));
     }
 }

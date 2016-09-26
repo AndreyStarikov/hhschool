@@ -1,5 +1,6 @@
 package org.andreystarikov;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ import static org.junit.Assert.*;
  * Created by Andrey on 23.09.2016.
  */
 public class IntUtilTest {
+
     @Test
     public void testGetReverseList() throws Exception {
         ArrayList a = new ArrayList();

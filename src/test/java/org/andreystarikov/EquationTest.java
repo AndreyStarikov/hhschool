@@ -11,17 +11,20 @@ public class EquationTest {
     @Test
     public void getCount() throws Exception {
         Equation e = new Equation("aba", "aacd", "acce");
-        System.out.println(e.getCount());
+        assertEquals("Получаем", 40, e.getCount());
+//        System.out.println(e.getCount());
     }
     @Test
     public void getCount2() throws Exception {
         Equation e = new Equation("abc", "cde", "ded");
-        System.out.println(e.getCount());
+        assertEquals("Получаем", 28, e.getCount());
+//        System.out.println(e.getCount());
     }
     @Test
     public void getCount3() throws Exception {
         Equation e = new Equation("abcb", "add", "aecb");
-        System.out.println(e.getCount());
+        assertEquals("Получаем", 450, e.getCount());
+//        System.out.println(e.getCount());
     }
 
 }

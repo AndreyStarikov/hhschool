@@ -13,7 +13,7 @@ public class DigitPermutationTest {
         int a = 3;
         int b = 6;
         DigitPermutation dp = new DigitPermutation(a, b);
-//        assertEquals("Получаем", 0, dp.getX());
-        System.out.println(dp.getX());
+        assertEquals("Получаем", 41958, dp.getX());
+//        System.out.println(dp.getX());
     }
 }

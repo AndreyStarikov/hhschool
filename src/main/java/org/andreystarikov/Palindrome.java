@@ -12,25 +12,20 @@ public class Palindrome {
         while (x <= max) {
             ArrayList original = IntUtil.getArrayListFromInt(x);
             boolean flag = true;
-//            int DEBUG = 0; // удалить потом
             for (int i = 0; i < 50; i++) {
-//                DEBUG++;
                 ArrayList revers = IntUtil.getReverseList(original);
-                if (IntUtil.listCompare(original, revers) && i != 0) { //проверка не очень
+                if (IntUtil.listCompare(original, revers) && i != 0) {
                     flag = false;
                     break;
                 }
                 original = IntUtil.addition(original, revers);
             }
-//            if (DEBUG > 48) System.out.println(DEBUG);
             if (flag) {
-                System.out.println(x);
+//                System.out.println(x);
                 count++;
             }
             x++;
         }
         return count;
     }
-
-
 }
